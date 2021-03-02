@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My New Hugo Site</title>
+    <link>http://example.org/posts/</link>
+    <description>Recent content in Posts on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Mar 2021 23:39:43 +0900</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HugoでWebGLを動かす</title>
+      <link>http://example.org/posts/example1/</link>
+      <pubDate>Mon, 01 Mar 2021 23:39:43 +0900</pubDate>
+      
+      <guid>http://example.org/posts/example1/</guid>
+      <description>HugoでWebGLを動かす方法 その記事のmdファイルにショートコードを入れ、直接WebGLを動かすHTMLを埋め込んで表示することが出来た。 CSSなどでレイアウトを変えれば背景にWebGLを使うことができるかもしれない。
+window.addEventListener(&#39;load&#39;, init);function init() {const width = 960;const height = 540;const renderer = new THREE.WebGLRenderer({canvas: document.querySelector(&#39;#myCanvas&#39;)});renderer.setPixelRatio(window.devicePixelRatio);renderer.setSize(width, height);const scene = new THREE.Scene();const camera = new THREE.PerspectiveCamera(45, width / height);camera.position.set(0, 0, +1000);const geometry = new THREE.BoxGeometry(400, 400, 400);const material = new THREE.MeshNormalMaterial();const box = new THREE.Mesh(geometry, material);scene.add(box);tick();function tick() {box.rotation.y += 0.</description>
+    </item>
+    
+  </channel>
+</rss>
